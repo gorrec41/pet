@@ -1,0 +1,83 @@
+.reviews {
+    position: relative;
+    padding: 120px 0;
+    background: $accent;
+    &__top {
+        margin-bottom: 55px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        color: $white;
+        @extend %page_title;
+    }
+
+    &__text {
+        color: $white;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    &-row {
+        margin-bottom: 24px;
+        gap: 24px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__card {
+        position: relative;
+        padding: 24px;
+        color: $white;
+        overflow: hidden;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        &-name {
+            margin-bottom: 12px;
+            line-height: 24px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        &-review {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        &-txt {
+            max-width: 400px;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+        &-avatar {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 100%;
+            height: auto;
+            max-width: 75px;
+        }
+        .liked {
+            min-width: fit-content;
+            font-size: 13px;
+            color: $turquoise;
+            img, svg {
+                margin-right: 6px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+        &.color {
+            color: $black;
+            background: $white;
+            .reviews__card-txt {
+                max-width: 320px;
+            }
+            .liked {
+                color: $accent;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="description", content="Artyom Titov")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="format-detection", content="telephone=no")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title User
+        link(rel="shortcut icon", href="../img/icons/favicon.ico")
+        //- font
+        link(rel="stylesheet", href="../font/font.css")
+        //- swiper
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+        //- style
+        link(rel="stylesheet", href="../css/reset.css")
+        link(rel="stylesheet", href="../css/main.css")
+    body
+        .wrapper 
+            .content 
+                //- header
+                header.header#header
+                    .container
+                        .waves
+                            img(src="../img/waves/waves.png", alt="waves")
+                        .header__nav 
+                            a.logo(href="index.html")
+                                img(src="../img/icons/logo.svg", alt="logo")
+                            .header__buttons 
+                                a.btn.header-ask(href="#") Ask your question
+                                    img(src="../img/icons/chat.svg", alt="ask")
+                                a.btn.header-login(href="#") 
+                                    span.avatar 
+                                        img(src="../img/icons/avatar.svg", alt="avatar")
+                                    span.login-txt Profile
+                        .header__desc.none 
+                            h1 Get help with homework
+                            p Over #[span.quantity 11,000,000+] answers and solutions verified by 
+                                span.txt  experts 
+                                    img(src="../img/icons/star.svg", alt="star") 
+                        form.search(action="#" method="post" autocomplete="on")
+                            button.search-icon.btn.btn-icon-dark(type="button")
+                                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M14.5005 6.16663C14.5005 4.78591 13.3812 3.66663 12.0005 3.66663C10.6198 3.66663 9.50049 4.78591 9.50049 6.16663V11.1666C9.50049 12.5473 10.6198 13.6666 12.0005 13.6666C13.3812 13.6666 14.5005 12.5473 14.5005 11.1666V6.16663Z" stroke="#4C37EE" stroke-width="1.5")
+                                    path(d="M6.16699 10.3333V11.1666C6.16699 11.9326 6.31788 12.6912 6.61103 13.3989C6.90418 14.1066 7.33386 14.7497 7.87554 15.2914C8.41721 15.833 9.06027 16.2627 9.76801 16.5559C10.4757 16.849 11.2343 16.9999 12.0003 16.9999C12.7664 16.9999 13.5249 16.849 14.2326 16.5559C14.9404 16.2627 15.5834 15.833 16.1251 15.2914C16.6668 14.7497 17.0965 14.1066 17.3896 13.3989C17.6828 12.6912 17.8337 11.9326 17.8337 11.1666V10.3333" stroke="#4C37EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                                    path(d="M12.0005 20.3333H14.5005M12.0005 17V20.3333V17ZM12.0005 20.3333H9.50049H12.0005Z" stroke="#4C37EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                            input.input(id="search_field" type="text" placeholder="What is your question?" required) 
+                            button.search__btn.btn-icon(type="button")
+                                span.overlay-bg
+                                img.search__icon(src="../img/icons/search-icon.svg", alt="search")
+                                img.search__delete(src="../img/icons/close.svg", alt="delete")
+                            .search__panel 
+                                .search__panel-inner
+                                    span.search__panel-dot
+                main   
+                    include ./components/user_page.pug 
+
+            //- footer
+            include ./components/footer.pug
+        
+        //- login
+        include ./components/sign_in.pug
+        //- subscription
+        include ./components/subscription.pug
+
+        //- swiper
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js") 
+
+        //- scripts
+        script(src="../js/script.js") 
+        script(src="../js/slider.js") 

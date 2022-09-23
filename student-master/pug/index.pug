@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="description", content="Artyom Titov")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="format-detection", content="telephone=no")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Studen
+        link(rel="shortcut icon", href="../img/icons/favicon.ico")
+        //- font
+        link(rel="stylesheet", href="../font/font.css")
+        //- swiper
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+        //- style
+        link(rel="stylesheet", href="../css/reset.css")
+        link(rel="stylesheet", href="../css/main.css")
+    body
+        .wrapper 
+            .content 
+                //- header
+                include ./components/header.pug
+                main   
+                    //- categories
+                    include ./components/categories.pug
+                    //- benefits
+                    include ./components/benefits.pug
+                    //- experts
+                    include ./components/ranks_experts.pug
+                    //- reviews
+                    include ./components/reviews.pug
+                    //- start
+                    include ./components/start.pug
+            //- footer
+            include ./components/footer.pug
+        
+        //- login
+        include ./components/sign_in.pug
+        
+        //- answer help
+        include ./components/answer-helpful.pug
+
+        //- swiper
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js") 
+
+        //- scripts
+        script(src="../js/script.js") 
+        script(src="../js/slider.js") 
+        

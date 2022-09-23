@@ -1,0 +1,113 @@
+$border10: 10px;
+$border22: 22px;
+$black: #111111;
+$white: #ffffff;
+$accent: #4C37EE;
+$yellow: #FFE70D;
+$turquoise: #23FFCA;
+$light-white: #F2F2F2;
+$light-color: #eeeeee;
+$light-orange: #FF4D00;
+$saturation-orange: #FB6816;
+$black3: rgba(17, 17, 17, 0.03);
+$black5: rgba(17, 17, 17, 0.05);
+$black7: rgba(17, 17, 17, 0.07);
+$black10: rgba(17, 17, 17, 0.1);
+$black20: rgba(0, 0, 0, 0.2);
+$black40: rgba(17, 17, 17, 0.4);
+$black60: rgba(17, 17, 17, 0.6);
+$black80: rgba(17, 17, 17, 0.8);
+$light-violet: rgba(76, 55, 238, 0.15);
+$light-saturation-orange: rgba(251, 104, 22, 0.2);
+
+// повернутые бг
+%page_bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    border-radius: 12px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+}
+
+// заголовок 48
+%page_title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+// заголовок 32
+%page_subtitle {
+    color: $black;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+// акцентный цвет
+%accent-color {
+    color: $accent;
+}
+
+// серый
+%grey-color {
+    color: $black60;
+}
+
+// прозрачный бг
+%light_color_btn {
+    color: $saturation-orange;
+    background: $light-saturation-orange;
+
+    img,
+    svg {
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+
+        path {
+            fill: $saturation-orange;
+        }
+    }
+
+    &:hover {
+        color: $white;
+        background: $light-orange;
+
+        path {
+            fill: $white;
+        }
+    }
+}
+
+// яркий бг
+%color_btn {
+    color: $white;
+    padding: 16px 40px;
+    border-radius: 16px;
+    background: $saturation-orange;
+
+    img,
+    svg {
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &:hover {
+        background: $light-orange;
+    }
+}

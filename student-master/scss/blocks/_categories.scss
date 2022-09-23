@@ -1,0 +1,44 @@
+.categories {
+    padding-top: 72px;
+
+    &-grid {
+        gap: 32px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__inner {
+        margin-bottom: 24px;
+        gap: 24px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(145px, 1fr));
+    }
+
+    &-left {
+        max-width: 712px;
+        width: 100%;
+    }
+
+    &-right {
+        max-width: 360px;
+        width: 100%;
+        &.user {
+            position: sticky;
+            top: 195px;
+        }
+    }
+
+    &-desc {
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        @extend %accent-color;
+        svg, 
+        img {
+            margin-right: 8px;
+        }
+    }
+}

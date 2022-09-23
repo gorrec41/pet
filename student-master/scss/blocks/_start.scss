@@ -1,0 +1,43 @@
+.start {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    &-wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        color: $black;
+        @extend %page_title;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        line-height: 30px;
+        font-weight: 500;
+        font-size: 19px;
+        color: $black;
+    }
+
+    &-btn {
+        padding: 20px 32px;
+        border-radius: 16px;
+        @extend %color_btn;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 70px;
+        bottom: 90px;
+        width: 11.71875vw;
+        height: 9.895834vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('/img/icons/breeding.svg');
+    }
+}

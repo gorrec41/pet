@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Artyom Titov">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studen</title>
+    <link rel="shortcut icon" href="../img/icons/favicon.ico">
+    <link rel="stylesheet" href="../font/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <div class="wrapper"> 
+      <div class="content"> 
+        <header class="header" id="header">
+          <div class="container">
+            <div class="waves"><img src="../img/waves/waves.png" alt="waves"></div>
+            <div class="header__nav"> <a class="logo" href="index.html"><img src="../img/icons/logo.svg" alt="logo"></a>
+              <div class="header__buttons"> 
+                <div class="notice"><a class="btn header-ask" href="#"><img src="../img/icons/chat.svg" alt="ask"><span>Ask your question</span></a>
+                  <div class="notice-inner">
+                    <div class="notice-desc">
+                      <div class="notice__img"> <img src="../img/illustrations/avatar-bot.png" alt="bot"></div>
+                      <div class="notice-message"><span>Studen</span>
+                        <p class="accent-txt">Your answer is ready!</p>
+                      </div>
+                    </div><a class="btn btn-main notice__btn" href="#">Show</a>
+                  </div>
+                </div><a class="btn header-login popup-open" href="#">Sign In</a>
+              </div>
+            </div>
+            <div class="header__desc"> 
+              <h1>Get help with homework</h1>
+              <p>Over <span class="quantity">11,000,000+</span> answers and solutions verified by <span class="txt"> experts <img src="../img/icons/star.svg" alt="star"></span></p>
+            </div>
+            <form class="search" action="#" method="post" autocomplete="on">
+              <button class="search-icon btn btn-icon-dark" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5005 6.16663C14.5005 4.78591 13.3812 3.66663 12.0005 3.66663C10.6198 3.66663 9.50049 4.78591 9.50049 6.16663V11.1666C9.50049 12.5473 10.6198 13.6666 12.0005 13.6666C13.3812 13.6666 14.5005 12.5473 14.5005 11.1666V6.16663Z" stroke="#4C37EE" stroke-width="1.5"></path>
+                  <path d="M6.16699 10.3333V11.1666C6.16699 11.9326 6.31788 12.6912 6.61103 13.3989C6.90418 14.1066 7.33386 14.7497 7.87554 15.2914C8.41721 15.833 9.06027 16.2627 9.76801 16.5559C10.4757 16.849 11.2343 16.9999 12.0003 16.9999C12.7664 16.9999 13.5249 16.849 14.2326 16.5559C14.9404 16.2627 15.5834 15.833 16.1251 15.2914C16.6668 14.7497 17.0965 14.1066 17.3896 13.3989C17.6828 12.6912 17.8337 11.9326 17.8337 11.1666V10.3333" stroke="#4C37EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M12.0005 20.3333H14.5005M12.0005 17V20.3333V17ZM12.0005 20.3333H9.50049H12.0005Z" stroke="#4C37EE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <input class="input" id="search_field" type="text" placeholder="What is your question?" required>
+              <button class="search__btn btn-icon" type="button"><span class="overlay-bg"></span><img class="search__icon" src="../img/icons/search-icon.svg" alt="search"><img class="search__delete" src="../img/icons/close.svg" alt="delete"></button>
+              <div class="search__panel"> 
+                <div class="search__panel-inner"><span class="search__panel-dot"></span></div>
+              </div>
+            </form>
+          </div>
+        </header>
+        <main>  
+          <section class="categories">
+            <div class="container">
+              <div class="categories-grid">
+                <div class="categories-left">
+                  <div class="categories__inner"> <a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.4316 1.98242L15.0176 3.39648L17.1094 5.48828L14.9609 7.63672L11.9551 4.63281L4.03125 12.5449L4.00195 18.5957L1.97461 20.623L3.38867 22.0371L5.42578 20H11.4141L11.707 19.707L19.3691 12.0469L16.375 9.05273L18.5234 6.90234L20.6035 8.98242L22.0176 7.56836L16.4316 1.98242ZM11.9531 7.45898L16.5391 12.0469L14.9844 13.6016L12.7363 11.3516L11.3223 12.7656L13.5703 15.0156L12 16.5859L9.70703 14.293L8.29297 15.707L10.584 18H6.00391L6.02734 13.3789L11.9531 7.45898Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Medicine</h2>
+                      <p class="categories__card-txt">102 384</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 3V6H3V8H6V11H8V8H11V6H8V3H6ZM13 6V8H21V6H13ZM4.70703 13.293L3.29297 14.707L5.58594 17L3.29297 19.293L4.70703 20.707L7 18.4141L9.29297 20.707L10.707 19.293L8.41406 17L10.707 14.707L9.29297 13.293L7 15.5859L4.70703 13.293ZM13 14V16H21V14H13ZM13 18V20H21V18H13Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Mathematics</h2>
+                      <p class="categories__card-txt">1 789 916</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2C10.25 2 8.77083 3.61945 7.88083 6.18945C8.03083 6.07945 8.18958 5.98086 8.34958 5.88086C9.29958 5.29086 10.2607 4.77938 11.2207 4.35938C11.4907 4.11937 11.76 4 12 4C12.02 4 12.0503 3.99977 12.0703 4.00977C12.5703 4.04977 13.1599 4.60031 13.6699 5.57031C13.6735 5.57721 13.676 5.58681 13.6797 5.59375C12.3529 6.01349 10.9602 6.64478 9.58005 7.48438C9.58038 7.48322 9.57972 7.48162 9.58005 7.48047C9.53709 7.50195 9.499 7.52759 9.45895 7.55273C9.44226 7.56304 9.42486 7.56972 9.40817 7.58008C9.05086 7.80331 8.71085 8.03334 8.37887 8.26758C8.26296 8.34965 8.15158 8.43238 8.03903 8.51562C7.80241 8.68975 7.57365 8.8663 7.35153 9.04492C7.29937 9.08694 7.24076 9.12777 7.18942 9.16992C7.18908 9.17242 7.18976 9.17523 7.18942 9.17773C3.79122 11.9712 2.18709 15.2273 3.40622 17.3301C3.83622 18.0701 4.57756 18.5898 5.55856 18.8398C6.00856 18.9498 6.48778 19 7.00778 19C7.42254 19 7.86484 18.9613 8.32223 18.8945C8.65183 19.6128 9.04128 20.2316 9.48044 20.7207C10.2104 21.5407 11.07 22 12 22C13.75 22 15.2291 20.3805 16.1191 17.8105C16.4291 16.9205 16.6605 15.9201 16.8105 14.8301C16.8109 14.8276 16.8102 14.8248 16.8105 14.8223C20.2093 12.0288 21.8128 8.77273 20.5937 6.66992C20.1637 5.92992 19.4224 5.41016 18.4414 5.16016C18.2114 5.10016 17.9824 5.05906 17.7324 5.03906C18.0224 5.73906 18.2611 6.48906 18.4511 7.28906C18.6411 7.39906 18.7713 7.52969 18.8613 7.67969C19.3371 8.50151 18.5613 10.4127 16.498 12.4141C16.3961 12.5135 16.3021 12.6112 16.1933 12.7109C15.9029 12.9768 15.5788 13.2427 15.2422 13.5078C15.1483 13.5812 15.068 13.6556 14.9707 13.7285C14.5269 14.0639 14.0483 14.3971 13.5293 14.7207C12.7793 15.1907 12.0496 15.5706 11.3496 15.8906C11.5496 16.8306 11.7885 17.4805 11.9785 17.8105C12.7824 17.4553 13.6054 17.0157 14.4199 16.5195C13.9899 18.0295 13.379 19.0991 12.789 19.6191C12.519 19.8691 12.25 20 12 20C11.97 20 11.9401 20.0005 11.9101 19.9805C11.4101 19.9305 10.84 19.3797 10.33 18.4297C10.06 17.9197 9.79981 17.2908 9.58981 16.5508C9.41981 15.9608 9.27966 15.3001 9.17966 14.5801C9.09966 14.0501 9.04927 13.4809 9.02927 12.8809C9.00927 12.6009 8.99997 12.3 8.99997 12C8.99997 11.3814 9.03024 10.7933 9.08005 10.2344C9.51044 9.91148 9.96847 9.59102 10.4687 9.2793C11.8879 8.39268 13.2244 7.82277 14.416 7.46289C14.5734 8.02758 14.7118 8.66838 14.8105 9.35938C14.9005 9.92938 14.9604 10.5395 14.9804 11.1895C15.7804 10.4995 16.41 9.84031 16.83 9.32031C16.81 9.14031 16.78 8.97078 16.75 8.80078C16.66 8.18078 16.5291 7.5893 16.3691 7.0293C16.1791 6.3293 15.9497 5.68937 15.6797 5.10938C15.3497 4.38937 14.9595 3.7693 14.5195 3.2793C13.7895 2.4593 12.93 2 12 2ZM6.99997 12.0859C7.0104 13.8797 7.23096 15.5346 7.62887 16.9609C7.00006 17.0213 6.45975 17.0018 6.0488 16.9004C5.5988 16.7804 5.28864 16.5903 5.13864 16.3203C5.04864 16.1603 4.99802 15.9605 4.99802 15.7305C4.99741 14.8635 5.66202 13.5202 6.99997 12.0859Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Physics</h2>
+                      <p class="categories__card-txt">48 293</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 3C3.895 3 3 3.895 3 5V19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19V5C21 3.895 20.105 3 19 3H5ZM5 5H19V7H5V5ZM5 9H19V19H5V9ZM15.5859 10L14.5859 11H13V13H15.4141L17 11.4141L15.5859 10ZM7 11V13H11V11H7ZM15.5859 14L14.5859 15H13V17H15.4141L17 15.4141L15.5859 14ZM7 15V17H11V15H7Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">SAT</h2>
+                      <p class="categories__card-txt">178 931</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20 3V4H10C5.59356 4 2 7.59356 2 12C2 14.388 3.06033 16.5321 4.72852 18H3V20H10H17V18H15.2715C16.9397 16.5321 18 14.388 18 12C18 11.3092 17.9036 10.6412 17.7383 10H20V11H22V3H20ZM10 6H20V8H10C7.80271 8 6 9.80271 6 12C6 14.1973 7.80271 16 10 16C12.1973 16 14 14.1973 14 12C14 11.2693 13.7864 10.5916 13.4395 10H15.6543C15.8756 10.6249 16 11.2958 16 12C16 15.3256 13.3256 18 10 18C6.67444 18 4 15.3256 4 12C4 8.67444 6.67444 6 10 6ZM10 10C11.1164 10 12 10.8836 12 12C12 13.1164 11.1164 14 10 14C8.88359 14 8 13.1164 8 12C8 10.8836 8.88359 10 10 10Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Engineering</h2>
+                      <p class="categories__card-txt">45 381</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.96875 2.93555L3.62891 5.07227C3.24891 5.22427 3 5.591 3 6V20C3 20.707 3.71409 21.1907 4.37109 20.9277L9.03125 19.0645L15.0312 21.0645L20.3711 18.9277C20.7511 18.7757 21 18.409 21 18V4C21 3.293 20.2859 2.80927 19.6289 3.07227L14.9688 4.93555L8.96875 2.93555ZM10 5.38672L14 6.7207V18.6133L10 17.2793V5.38672ZM8 5.47656V17.3223L5 18.5234V6.67773L8 5.47656ZM19 5.47656V17.3223L16 18.5234V6.67773L19 5.47656Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Geography</h2>
+                      <p class="categories__card-txt">45 381</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 2V5V18.5C3 20.3131 4.21988 22 6 22H19C20.7801 22 22 20.3131 22 18.5C22 16.6869 20.7801 15 19 15V4V2H16C16 2.552 15.552 3 15 3C14.448 3 14 2.552 14 2H12C12 2.552 11.552 3 11 3C10.448 3 10 2.552 10 2H8C8 2.552 7.552 3 7 3C6.448 3 6 2.552 6 2H3ZM5 5H17V15H6C5.63967 15 5.30895 15.0837 5 15.209V5ZM7 7V9H15V7H7ZM7 11V13H12V11H7ZM6 17C6.42902 17 7 17.5516 7 18.5C7 19.4484 6.42902 20 6 20C5.57098 20 5 19.4484 5 18.5C5 17.5516 5.57098 17 6 17ZM8.69922 17H19C19.4299 17 20 17.5511 20 18.5C20 19.4489 19.4299 20 19 20H8.69922C8.88773 19.5341 9 19.0249 9 18.5C9 17.9751 8.88773 17.4659 8.69922 17Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">History</h2>
+                      <p class="categories__card-txt">693 134</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 4C11.6492 4.00028 11.3046 4.09282 11.0009 4.26834C10.6972 4.44387 10.4449 4.69619 10.2695 5H2V7H4L0 15C0 17.761 2.239 20 5 20C7.761 20 10 17.761 10 15L6 7H10.2715C10.4467 7.30352 10.6986 7.55566 11.002 7.73117C11.3054 7.90667 11.6495 7.99938 12 8C12.3508 7.99972 12.6954 7.90718 12.9991 7.73166C13.3028 7.55613 13.5551 7.30381 13.7305 7H18L14 15C14 17.761 16.239 20 19 20C21.761 20 24 17.761 24 15L20 7H22V5H13.7285C13.5533 4.69648 13.3014 4.44434 12.998 4.26883C12.6946 4.09333 12.3505 4.00062 12 4ZM5 9.02148L7.48828 14H2.51172L5 9.02148ZM19 9.02148L21.4883 14H16.5117L19 9.02148ZM2.18359 16H7.81641C7.40332 17.1628 6.30463 18 5 18C3.69537 18 2.59668 17.1628 2.18359 16ZM16.1836 16H21.8164C21.4033 17.1628 20.3046 18 19 18C17.6954 18 16.5967 17.1628 16.1836 16Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Law</h2>
+                      <p class="categories__card-txt">56 780</p></a><a class="categories__card placement" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 2C4.90575 2 4 2.90575 4 4V20C4 21.0943 4.90575 22 6 22H18C19.0943 22 20 21.0943 20 20V8L14 2H6ZM6 4H13V9H18V20H6V4ZM9.26953 11L7 17H8.08594L8.57227 15.6035H10.8984L11.3887 17H12.4785L10.2051 11H9.26953ZM14.5 12V13.5H13V14.5H14.5V16H15.5V14.5H17V13.5H15.5V12H14.5ZM9.73633 12.2734L10.6055 14.7617H8.86523L9.73633 12.2734Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Advanced Placement (AP)</h2>
+                      <p class="categories__card-txt">178 931</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.168 1.92188L12.3848 9.02539C10.7449 9.14892 9.50737 9.76419 8.70312 10.6836C7.80073 11.7152 7.43684 12.985 7.15625 14.1816C6.87566 15.3782 6.67306 16.535 6.31641 17.3887C5.97764 18.1996 5.5853 18.6988 4.79688 19H2V21H4.98828H5C8.4745 21 11.5732 21.0595 14.0312 19.9062C15.2603 19.3296 16.3092 18.4001 16.9902 17.084C17.6393 15.8296 17.9588 14.2483 17.9883 12.2812L22.0625 5.0332L21.1543 4.55273L16.168 1.92188ZM16.998 4.62109L19.3125 5.8418L16.5957 10.6797L14.3652 9.56445L16.998 4.62109ZM12.793 11.0156L15.9746 12.6055C15.9146 14.1712 15.6426 15.3394 15.2148 16.166C14.7316 17.0999 14.084 17.6704 13.1816 18.0938C11.8881 18.7007 9.89965 18.8581 7.67188 18.9238C7.83068 18.6646 8.04887 18.4312 8.16211 18.1602C8.65037 16.9914 8.84398 15.7455 9.10352 14.6387C9.36305 13.5319 9.68427 12.5976 10.207 12C10.7031 11.4329 11.4012 11.054 12.793 11.0156Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Arts</h2>
+                      <p class="categories__card-txt">178 931</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.96875 2.93555L3.62891 5.07227C3.24891 5.22427 3 5.591 3 6V20C3 20.707 3.71409 21.1907 4.37109 20.9277L9.03125 19.0645L15.0312 21.0645L20.3711 18.9277C20.7511 18.7757 21 18.409 21 18V4C21 3.293 20.2859 2.80927 19.6289 3.07227L14.9688 4.93555L8.96875 2.93555ZM10 5.38672L14 6.7207V18.6133L10 17.2793V5.38672ZM8 5.47656V17.3223L5 18.5234V6.67773L8 5.47656ZM19 5.47656V17.3223L16 18.5234V6.67773L19 5.47656Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Biology</h2>
+                      <p class="categories__card-txt">5 916</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 3V4H4C2.895 4 2 4.895 2 6V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V6C22 4.895 21.105 4 20 4H15V3H9ZM4 6H20V13H18C18 12.7348 17.8946 12.4804 17.7071 12.2929C17.5196 12.1054 17.2652 12 17 12C16.7348 12 16.4804 12.1054 16.2929 12.2929C16.1054 12.4804 16 12.7348 16 13H8C8 12.7348 7.89464 12.4804 7.70711 12.2929C7.51957 12.1054 7.26522 12 7 12C6.73478 12 6.48043 12.1054 6.29289 12.2929C6.10536 12.4804 6 12.7348 6 13H4V6ZM4 15H20V18H4V15Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Business</h2>
+                      <p class="categories__card-txt">45 381</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 3V5H9V10L3.43164 17.7734C3.16564 18.1124 3 18.535 3 19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19C21 18.535 20.8344 18.1124 20.5684 17.7734L15 10V5H16V3H8ZM11 5H13V9H11V5ZM10.7441 11H13.2559L18.9434 18.9375L18.9727 18.9668L19 19L5.00586 19.0078L5.03125 18.9727L5.05664 18.9375L10.7441 11ZM13 13C12.7348 13 12.4804 13.1054 12.2929 13.2929C12.1054 13.4804 12 13.7348 12 14C12 14.2652 12.1054 14.5196 12.2929 14.7071C12.4804 14.8946 12.7348 15 13 15C13.2652 15 13.5196 14.8946 13.7071 14.7071C13.8946 14.5196 14 14.2652 14 14C14 13.7348 13.8946 13.4804 13.7071 13.2929C13.5196 13.1054 13.2652 13 13 13ZM10.5 15C10.1022 15 9.72064 15.158 9.43934 15.4393C9.15804 15.7206 9 16.1022 9 16.5C9 16.8978 9.15804 17.2794 9.43934 17.5607C9.72064 17.842 10.1022 18 10.5 18C10.8978 18 11.2794 17.842 11.5607 17.5607C11.842 17.2794 12 16.8978 12 16.5C12 16.1022 11.842 15.7206 11.5607 15.4393C11.2794 15.158 10.8978 15 10.5 15Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Chemistry</h2>
+                      <p class="categories__card-txt">56 780</p></a><a class="categories__card technology" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 2V7H5C3.90694 7 3 7.90694 3 9V16C3 17.645 4.35503 19 6 19H18C19.645 19 21 17.645 21 16V9C21 7.90694 20.0931 7 19 7H13V2H11ZM0 9V17H2V9H0ZM5 9H19V16C19 16.565 18.565 17 18 17H6C5.43497 17 5 16.565 5 16V9ZM22 9V17H24V9H22ZM10 10V12H14V10H10Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Computers and Technology</h2>
+                      <p class="categories__card-txt">178 931</p></a><a class="categories__card placement" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM18.918 8H16.613C16.366 6.801 16.008 5.735 15.561 4.846C16.964 5.548 18.132 6.648 18.918 8ZM20 12C20 12.692 19.903 13.359 19.737 14H16.907C16.967 13.357 17 12.689 17 12C17 11.311 16.967 10.643 16.907 10H19.737C19.903 10.641 20 11.308 20 12ZM12 20C11.157 20 10.051 18.519 9.445 16H14.554C13.949 18.519 12.843 20 12 20ZM9.108 14C9.041 13.371 9 12.707 9 12C9 11.293 9.041 10.629 9.108 10H14.892C14.959 10.629 15 11.293 15 12C15 12.707 14.959 13.371 14.892 14H9.108ZM4 12C4 11.308 4.097 10.641 4.263 10H7.093C7.033 10.643 7 11.311 7 12C7 12.689 7.033 13.357 7.093 14H4.263C4.097 13.359 4 12.692 4 12ZM12 4C12.843 4 13.949 5.481 14.555 8H9.445C10.051 5.481 11.157 4 12 4ZM8.44 4.846C7.993 5.735 7.635 6.801 7.388 8H5.082C5.868 6.648 7.036 5.548 8.44 4.846ZM5.082 16H7.387C7.634 17.199 7.992 18.265 8.439 19.154C7.036 18.452 5.868 17.352 5.082 16ZM15.56 19.154C16.007 18.265 16.364 17.199 16.612 16H18.917C18.132 17.352 16.964 18.452 15.56 19.154Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">World Languages</h2>
+                      <p class="categories__card-txt">178 931</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 2C6.46957 2 5.96086 2.21071 5.58579 2.58579C5.21071 2.96086 5 3.46957 5 4C5 4.53043 5.21071 5.03914 5.58579 5.41421C5.96086 5.78929 6.46957 6 7 6C7.53043 6 8.03914 5.78929 8.41421 5.41421C8.78929 5.03914 9 4.53043 9 4C9 3.46957 8.78929 2.96086 8.41421 2.58579C8.03914 2.21071 7.53043 2 7 2ZM12 2C11.4696 2 10.9609 2.21071 10.5858 2.58579C10.2107 2.96086 10 3.46957 10 4C10 4.53043 10.2107 5.03914 10.5858 5.41421C10.9609 5.78929 11.4696 6 12 6C12.5304 6 13.0391 5.78929 13.4142 5.41421C13.7893 5.03914 14 4.53043 14 4C14 3.46957 13.7893 2.96086 13.4142 2.58579C13.0391 2.21071 12.5304 2 12 2ZM17 2C16.4696 2 15.9609 2.21071 15.5858 2.58579C15.2107 2.96086 15 3.46957 15 4C15 4.53043 15.2107 5.03914 15.5858 5.41421C15.9609 5.78929 16.4696 6 17 6C17.5304 6 18.0391 5.78929 18.4142 5.41421C18.7893 5.03914 19 4.53043 19 4C19 3.46957 18.7893 2.96086 18.4142 2.58579C18.0391 2.21071 17.5304 2 17 2ZM5 7C3.895 7 3 7.895 3 9V16H4V22H6V14H5V9H6.10156C6.25356 8.257 6.58339 7.584 7.02539 7H5ZM11 7C9.343 7 8 8.343 8 10V18H9V22H11V18H13V22H15V18H16V10C16 8.343 14.657 7 13 7H11ZM16.9746 7C17.4166 7.584 17.7474 8.257 17.8984 9H19V14H18V22H20V16H21V9C21 7.895 20.105 7 19 7H16.9746ZM11 9H13C13.552 9 14 9.448 14 10V16H10V10C10 9.448 10.448 9 11 9Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Social Studies</h2>
+                      <p class="categories__card-txt">102 384</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.5 3C4.462 3 2 5.462 2 8.5C2 12.671 6.91225 16.7132 8.28125 17.9902C9.85825 19.4602 12 21.3496 12 21.3496C12 21.3496 14.1418 19.4602 15.7188 17.9902C17.0877 16.7132 22 12.671 22 8.5C22 5.462 19.538 3 16.5 3C13.605 3 12 5.08984 12 5.08984C12 5.08984 10.395 3 7.5 3ZM7.5 5C9.327 5 10.3861 6.27559 10.4141 6.30859L12 8L13.5859 6.30859C13.5959 6.29559 14.673 5 16.5 5C17.1008 5 17.6578 5.16582 18.1523 5.43359L12 11.5859L8.70703 8.29297L7.29297 9.70703L12 14.4141L19.5664 6.84766C19.8342 7.34218 20 7.89921 20 8.5C20 11.419 16.2305 14.8264 14.8105 16.1094C14.6335 16.2694 14.4805 16.4084 14.3555 16.5254C13.6045 17.2254 12.716 18.0299 12 18.6719C11.284 18.0299 10.3945 17.2244 9.64453 16.5254C9.51853 16.4084 9.36545 16.2684 9.18945 16.1094C7.76945 14.8264 4 11.419 4 8.5C4 6.57 5.57 5 7.5 5Z" fill="#4C37EE"></path>
+                        </svg>
+                      </div>
+                      <h2 class="categories__card-title">Health</h2>
+                      <p class="categories__card-txt">56 780</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon"><img src="../img/icons/lang/england.svg" alt="england"></div>
+                      <h2 class="categories__card-title">English</h2>
+                      <p class="categories__card-txt">45 381</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon"><img src="../img/icons/lang/spain.svg" alt="spain"></div>
+                      <h2 class="categories__card-title">Spanish</h2>
+                      <p class="categories__card-txt">56 780</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon"><img src="../img/icons/lang/france.svg" alt="france"></div>
+                      <h2 class="categories__card-title">French</h2>
+                      <p class="categories__card-txt">102 384</p></a><a class="categories__card" href="#">
+                      <div class="categories__card-icon"><img src="../img/icons/lang/germany.svg" alt="germany"></div>
+                      <h2 class="categories__card-title">German</h2>
+                      <p class="categories__card-txt">178 931</p></a></div>
+                  <div class="banner">
+                    <div class="banner-desc"> 
+                      <div class="banner-desc__top">
+                        <h2>Quick expert help</h2>
+                        <p>Get expert answer in 15 minutes in the Studen app for <span>free!</span></p>
+                      </div>
+                      <div class="banner-services">
+                        <div class="banner-services-download"> <a class="banner-services__link" href="#"> <img class="banner-services__img" src="../img/illustrations/market/app.png" alt="app store"></a><a class="banner-services__link" href="#"> <img class="banner-services__img" src="../img/illustrations/market/google.png" alt="google store"></a></div><img class="banner-services__img" src="../img/illustrations/market/qr-code.png" alt="qr code">
+                      </div>
+                      <p class="banner-desc__txt">If you read this, get 1 month subscription for free — just use promo code ASVHR</p>
+                    </div>
+                    <div class="banner__img"> <img src="../img/illustrations/phone-chat.png" alt="chat"></div>
+                  </div>
+                </div>
+                <div class="categories-right">
+                  <div class="sidebar"> 
+                    <div class="sidebar__top">
+                      <h2 class="sidebar__title">Top experts </h2>
+                      <p class="sidebar__txt">Our experts are ready to answer any of your questions 24 hours a day</p>
+                    </div>
+                    <div class="sidebar-inner"><a class="sidebar__user" href="#">
+                        <div class="sidebar__user-content">
+                          <div class="sidebar__user-img"><img class="sidebar__user-avatar" src="../img/users/man_1.png" alt="пользователь"><span class="hint-ranks phd">p</span><span class="hint-ranks__content">Phd</span></div>
+                          <div class="sidebar__user-desc">
+                            <h3 class="sidebar__user-name">Konstantin Berg</h3>
+                            <p class="sidebar__user-sol">3 592 solutions</p>
+                          </div>
+                        </div>
+                        <div class="rating-wrap accent-txt"><span class="rating">4.9</span><img src="../img/icons/rating-star.svg" alt="star"></div></a><a class="sidebar__user" href="#">
+                        <div class="sidebar__user-content">
+                          <div class="sidebar__user-img"><img class="sidebar__user-avatar" src="../img/users/man_2.png" alt="пользователь"><span class="hint-ranks master">m</span><span class="hint-ranks__content">Master</span></div>
+                          <div class="sidebar__user-desc">
+                            <h3 class="sidebar__user-name">Bernard Wilkins</h3>
+                            <p class="sidebar__user-sol">2 273 solutions</p>
+                          </div>
+                        </div>
+                        <div class="rating-wrap accent-txt"><span class="rating">5.0</span><img src="../img/icons/rating-star.svg" alt="star"></div></a><a class="sidebar__user" href="#">
+                        <div class="sidebar__user-content">
+                          <div class="sidebar__user-img"><img class="sidebar__user-avatar" src="../img/users/woman_1.png" alt="пользователь"><span class="hint-ranks specialist">s</span><span class="hint-ranks__content">Specialist</span></div>
+                          <div class="sidebar__user-desc">
+                            <h3 class="sidebar__user-name">Maria Andrews</h3>
+                            <p class="sidebar__user-sol">1 992 solutions</p>
+                          </div>
+                        </div>
+                        <div class="rating-wrap accent-txt"><span class="rating">4.9</span><img src="../img/icons/rating-star.svg" alt="star"></div></a><a class="sidebar__user" href="#">
+                        <div class="sidebar__user-content">
+                          <div class="sidebar__user-img"><img class="sidebar__user-avatar" src="../img/users/woman_2.png" alt="пользователь"><span class="hint-ranks master">m</span><span class="hint-ranks__content">Master</span></div>
+                          <div class="sidebar__user-desc">
+                            <h3 class="sidebar__user-name">Madeline Flores</h3>
+                            <p class="sidebar__user-sol">1 028 solutions</p>
+                          </div>
+                        </div>
+                        <div class="rating-wrap accent-txt"><span class="rating">4.8</span><img src="../img/icons/rating-star.svg" alt="star"></div></a><a class="sidebar__user" href="#">
+                        <div class="sidebar__user-content">
+                          <div class="sidebar__user-img"><img class="sidebar__user-avatar" src="../img/users/man_3.png" alt="пользователь"><span class="hint-ranks phd">p</span><span class="hint-ranks__content">Phd</span></div>
+                          <div class="sidebar__user-desc">
+                            <h3 class="sidebar__user-name">Jaime Oliver</h3>
+                            <p class="sidebar__user-sol">976 solutions</p>
+                          </div>
+                        </div>
+                        <div class="rating-wrap accent-txt"><span class="rating">5.0</span><img src="../img/icons/rating-star.svg" alt="star"></div></a></div>
+                    <div class="sidebar-info">
+                      <p class="sidebar-online">8 free experts <span>online</span></p><a class="btn sidebar__btn" href="#">Ask question to an expert
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.3335 6.66675H10.6668" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M5.3335 9.33337H8.00016" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M8.00016 14.6667C11.6822 14.6667 14.6668 11.682 14.6668 8.00004C14.6668 4.31804 11.6822 1.33337 8.00016 1.33337C4.31816 1.33337 1.3335 4.31804 1.3335 8.00004C1.3335 9.21404 1.65816 10.3534 2.2255 11.3334L1.66683 14.3334L4.66683 13.7747C5.67986 14.3607 6.82984 14.6685 8.00016 14.6667V14.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></a>
+                    </div>
+                  </div><a class="banner-mini" href="#">
+                    <h2>Didn't find an answer?</h2>
+                    <p>Ask your question</p><img class="banner-mini__img" src="../img/illustrations/robots-little.png" alt="robot"></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="benefits"> 
+            <div class="container">
+              <div class="waves"><img src="../img/waves/waves.png" alt="waves"></div>
+              <div class="benefits-desc">
+                <h2 class="benefits__title">What is Studen</h2>
+                <p class="benefits__txt">Studen helps you with homework. There is two ways, how you can get solution</p>
+                <div class="benefits-inner"><a class="benefits__card" href="#"> 
+                    <div class="benefits-icon btn btn-icon-dark">
+                      <svg width="29" height="29" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.3335 6.66675H10.6668" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M5.3335 9.33337H8.00016" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8.00016 14.6667C11.6822 14.6667 14.6668 11.682 14.6668 8.00004C14.6668 4.31804 11.6822 1.33337 8.00016 1.33337C4.31816 1.33337 1.3335 4.31804 1.3335 8.00004C1.3335 9.21404 1.65816 10.3534 2.2255 11.3334L1.66683 14.3334L4.66683 13.7747C5.67986 14.3607 6.82984 14.6685 8.00016 14.6667V14.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                    <h3 class="benefits__card-title">Leave a question</h3>
+                    <p class="benefits__card-text">Studen will automatically select an expert for you</p></a><a class="benefits__card" href="#"> 
+                    <div class="benefits-icon btn btn-icon-dark">
+                      <svg width="27" height="27" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.083 14.0834L18.1663 18.1667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M1.83301 8.83337C1.83301 9.75263 2.01407 10.6629 2.36585 11.5122C2.71763 12.3614 3.23325 13.1331 3.88326 13.7831C4.53327 14.4331 5.30494 14.9487 6.15422 15.3005C7.0035 15.6523 7.91375 15.8334 8.83301 15.8334C9.75226 15.8334 10.6625 15.6523 11.5118 15.3005C12.3611 14.9487 13.1327 14.4331 13.7828 13.7831C14.4328 13.1331 14.9484 12.3614 15.3002 11.5122C15.6519 10.6629 15.833 9.75263 15.833 8.83337C15.833 6.97686 15.0955 5.19638 13.7828 3.88363C12.47 2.57087 10.6895 1.83337 8.83301 1.83337C6.97649 1.83337 5.19602 2.57087 3.88326 3.88363C2.57051 5.19638 1.83301 6.97686 1.83301 8.83337V8.83337Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                    <h3 class="benefits__card-title">Use search</h3>
+                    <p class="benefits__card-text">Our base includes solutions from experienced experts</p></a></div>
+              </div>
+            </div>
+            <div class="benefits__img"><img src="../img/illustrations/big-smile-robot.png" alt="big robot"></div>
+          </section>
+          <div class="experts"> 
+            <div class="container"> 
+              <h2 class="experts__title">Our experts</h2>
+              <div class="experts-wrap"> 
+                <div class="experts__item"> 
+                  <div class="experts__name"> <span class="experts-ranks hint-ranks specialist">s</span>
+                    <p class="experts__desc">Specialist</p>
+                  </div>
+                  <div class="experts__people">
+                    <div class="experts__user"><img src="../img/users/man_2.png" alt="user"></div>
+                    <div class="experts__user"><img src="../img/users/woman_1.png" alt="user"></div>
+                    <div class="experts__user"><img src="../img/users/woman_2.png" alt="user"></div>
+                    <div class="experts__user"><img src="../img/users/man_4.png" alt="user"></div>
+                    <div class="experts__user"></div>
+                    <div class="experts__user"></div>
+                    <div class="experts__user"></div>
+                    <div class="experts__user"></div>
+                  </div>
+                  <p class="experts__solutions">12 640 solutions</p>
+                  <div class="liked"><img src="../img/icons/like.svg" alt="like"><span>560 231</span></div>
+                </div>
+                <div class="experts__item"> 
+                  <div class="experts__name"> <span class="experts-ranks hint-ranks master">m</span>
+                    <p class="experts__desc">Master</p>
+                  </div>
+                  <div class="experts__people">
+                    <div class="experts__user"><img src="../img/users/man_2.png" alt="user"></div>
+                    <div class="experts__user"><img src="../img/users/woman_1.png" alt="user"></div>
+                    <div class="experts__user"><img src="../img/users/woman_2.png" alt="user"></div>
+                    <div class="experts__user"><img src="../img/users/man_4.png" alt="user"></div>
+                    <div class="experts__user"></div>
+                    <div class="experts__user"></div>
+                    <div class="experts__user"></div>
+                    <div class="experts__user"></div>
+                  </div>
+                  <p class="experts__solutions">8 380 solutions</p>
+                  <div class="liked"><img src="../img/icons/like.svg" alt="like"><span>252 380</span></div>
+                </div>
+                <div class="experts__item"> 
+                  <div class="experts__name"> <span class="experts-ranks hint-ranks phd">p</span>
+                    <p class="experts__desc">PhD</p>
+                  </div>
+                  <div class="experts__people">
+                    <div class="experts__user"><img src="../img/users/man_2.png" alt="user"></div>
+                    <div class="experts__user"><img src="../img/users/woman_1.png" alt="user"></div>
+                    <div class="experts__user"><img src="../img/users/woman_2.png" alt="user"></div>
+                    <div class="experts__user"><img src="../img/users/man_4.png" alt="user"></div>
+                    <div class="experts__user"></div>
+                    <div class="experts__user"></div>
+                    <div class="experts__user"></div>
+                    <div class="experts__user"></div>
+                  </div>
+                  <p class="experts__solutions">3 592 solutions</p>
+                  <div class="liked"><img src="../img/icons/like.svg" alt="like"><span>150 123</span></div>
+                </div>
+              </div>
+              <p class="experts__text">Our experts are ready to answer any of your questions 24 hours a day</p>
+            </div>
+          </div>
+          <div class="reviews">
+            <div class="container">
+              <div class="waves"><img src="../img/waves/waves.png" alt="waves"></div>
+              <div class="reviews__top"> 
+                <h2 class="reviews__title">Students really loves us</h2>
+                <p class="reviews__text">We help millions of students each months</p>
+              </div>
+            </div>
+            <div class="reviews-inner swiper">
+              <div class="reviews-row top swiper-wrapper">
+                <div class="swiper-slide reviews__card" data-swiper-autoplay="4000">
+                  <h3 class="reviews__card-name">Peter</h3>
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">this Studen is complimentary. My neighbor Krista has one of these. She works as a salesman and she says</p>
+                    <div class="liked"> 
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8082 1.34437C11.4895 1.34583 11.1706 1.46888 10.9277 1.71221L6.31991 6.32973C6.00824 6.64223 5.83325 7.06482 5.83325 7.50648V15.8333C5.83325 16.7541 6.57908 17.5 7.49992 17.5H14.9934C15.6592 17.5 16.2616 17.1034 16.525 16.4909L19.0315 10.6559C19.1207 10.4484 19.1666 10.2242 19.1666 9.99835V8.33331C19.1666 7.41247 18.4207 6.66664 17.4999 6.66664H12.2069L13.0354 2.86293C13.1271 2.44293 12.9962 2.00491 12.6903 1.70407C12.4453 1.46324 12.1268 1.34292 11.8082 1.34437ZM1.66659 7.49997C1.20659 7.49997 0.833252 7.87331 0.833252 8.33331V16.6666C0.833252 17.1266 1.20659 17.5 1.66659 17.5H3.33325C3.79325 17.5 4.16658 17.1266 4.16658 16.6666V8.33331C4.16658 7.87331 3.79325 7.49997 3.33325 7.49997H1.66659Z" fill="#23FFCA"></path>
+                      </svg><span>16</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card color" data-swiper-autoplay="4000">
+                  <h3 class="reviews__card-name">Alice</h3><img class="reviews__card-avatar" src="../img/users/user-1.png" alt="user">
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">this Studen is complimentary. My neighbor Krista has one of these. She works as a salesman and she says</p>
+                    <div class="liked"> <img src="../img/icons/like.svg" alt="like"><span>256</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card color" data-swiper-autoplay="4000">
+                  <h3 class="reviews__card-name">Peter</h3><img class="reviews__card-avatar" src="../img/users/user-2.png" alt="user">
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">I saw one of these in Moldova and I bought one. This Studen works very well. It romantically improves</p>
+                    <div class="liked"> <img src="../img/icons/like.svg" alt="like"><span>128</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card" data-swiper-autoplay="4000">
+                  <h3 class="reviews__card-name">CJ</h3>
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">this Studen is complimentary. My neighbor Krista has one of these. She works as a salesman and she says</p>
+                    <div class="liked"> 
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8082 1.34437C11.4895 1.34583 11.1706 1.46888 10.9277 1.71221L6.31991 6.32973C6.00824 6.64223 5.83325 7.06482 5.83325 7.50648V15.8333C5.83325 16.7541 6.57908 17.5 7.49992 17.5H14.9934C15.6592 17.5 16.2616 17.1034 16.525 16.4909L19.0315 10.6559C19.1207 10.4484 19.1666 10.2242 19.1666 9.99835V8.33331C19.1666 7.41247 18.4207 6.66664 17.4999 6.66664H12.2069L13.0354 2.86293C13.1271 2.44293 12.9962 2.00491 12.6903 1.70407C12.4453 1.46324 12.1268 1.34292 11.8082 1.34437ZM1.66659 7.49997C1.20659 7.49997 0.833252 7.87331 0.833252 8.33331V16.6666C0.833252 17.1266 1.20659 17.5 1.66659 17.5H3.33325C3.79325 17.5 4.16658 17.1266 4.16658 16.6666V8.33331C4.16658 7.87331 3.79325 7.49997 3.33325 7.49997H1.66659Z" fill="#23FFCA"></path>
+                      </svg><span>32</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card" data-swiper-autoplay="4000">
+                  <h3 class="reviews__card-name">Peter</h3>
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">this Studen is complimentary. My neighbor Krista has one of these. She works as a salesman and she says</p>
+                    <div class="liked"> <img src="../img/icons/like.svg" alt="like"><span>24</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card" data-swiper-autoplay="4000">
+                  <h3 class="reviews__card-name">Peter</h3>
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">this Studen is complimentary. My neighbor Krista has one of these. She works as a salesman and she says</p>
+                    <div class="liked"> <img src="../img/icons/like.svg" alt="like"><span>24</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card color" data-swiper-autoplay="4000">
+                  <h3 class="reviews__card-name">Mark</h3><img class="reviews__card-avatar" src="../img/users/user-3.png" alt="user">
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">This Studen works considerably well. It mildly improves my basketball by a lot. i use it until further notice</p>
+                    <div class="liked"> <img src="../img/icons/like.svg" alt="like"><span>32</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card" data-swiper-autoplay="4000">
+                  <h3 class="reviews__card-name">Peter</h3>
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">this Studen is complimentary. My neighbor Krista has one of these. She works as a salesman and she says</p>
+                    <div class="liked"> 
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8082 1.34437C11.4895 1.34583 11.1706 1.46888 10.9277 1.71221L6.31991 6.32973C6.00824 6.64223 5.83325 7.06482 5.83325 7.50648V15.8333C5.83325 16.7541 6.57908 17.5 7.49992 17.5H14.9934C15.6592 17.5 16.2616 17.1034 16.525 16.4909L19.0315 10.6559C19.1207 10.4484 19.1666 10.2242 19.1666 9.99835V8.33331C19.1666 7.41247 18.4207 6.66664 17.4999 6.66664H12.2069L13.0354 2.86293C13.1271 2.44293 12.9962 2.00491 12.6903 1.70407C12.4453 1.46324 12.1268 1.34292 11.8082 1.34437ZM1.66659 7.49997C1.20659 7.49997 0.833252 7.87331 0.833252 8.33331V16.6666C0.833252 17.1266 1.20659 17.5 1.66659 17.5H3.33325C3.79325 17.5 4.16658 17.1266 4.16658 16.6666V8.33331C4.16658 7.87331 3.79325 7.49997 3.33325 7.49997H1.66659Z" fill="#23FFCA"></path>
+                      </svg><span>40</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-inner-second swiper">
+              <div class="reviews-row bottom swiper-wrapper">
+                <div class="swiper-slide reviews__card" data-swiper-autoplay="6000">
+                  <h3 class="reviews__card-name">Peter</h3>
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">this Studen is complimentary. My neighbor Krista has one of these. She works as a salesman and she says</p>
+                    <div class="liked"> <img src="../img/icons/like.svg" alt="like"><span>24</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card color" data-swiper-autoplay="6000">
+                  <h3 class="reviews__card-name">Mark</h3><img class="reviews__card-avatar" src="../img/users/user-3.png" alt="user">
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">This Studen works considerably well. It mildly improves my basketball by a lot. i use it until further notice</p>
+                    <div class="liked"> <img src="../img/icons/like.svg" alt="like"><span>32</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card" data-swiper-autoplay="6000">
+                  <h3 class="reviews__card-name">Peter</h3>
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">this Studen is complimentary. My neighbor Krista has one of these. She works as a salesman and she says</p>
+                    <div class="liked"> 
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8082 1.34437C11.4895 1.34583 11.1706 1.46888 10.9277 1.71221L6.31991 6.32973C6.00824 6.64223 5.83325 7.06482 5.83325 7.50648V15.8333C5.83325 16.7541 6.57908 17.5 7.49992 17.5H14.9934C15.6592 17.5 16.2616 17.1034 16.525 16.4909L19.0315 10.6559C19.1207 10.4484 19.1666 10.2242 19.1666 9.99835V8.33331C19.1666 7.41247 18.4207 6.66664 17.4999 6.66664H12.2069L13.0354 2.86293C13.1271 2.44293 12.9962 2.00491 12.6903 1.70407C12.4453 1.46324 12.1268 1.34292 11.8082 1.34437ZM1.66659 7.49997C1.20659 7.49997 0.833252 7.87331 0.833252 8.33331V16.6666C0.833252 17.1266 1.20659 17.5 1.66659 17.5H3.33325C3.79325 17.5 4.16658 17.1266 4.16658 16.6666V8.33331C4.16658 7.87331 3.79325 7.49997 3.33325 7.49997H1.66659Z" fill="#23FFCA"></path>
+                      </svg><span>40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card" data-swiper-autoplay="6000">
+                  <h3 class="reviews__card-name">Peter</h3>
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">I saw one of these in Moldova and I bought one. This Studen works very well. It romantically improves</p>
+                    <div class="liked"> <img src="../img/icons/like.svg" alt="like"><span>32</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__card color" data-swiper-autoplay="6000">
+                  <h3 class="reviews__card-name">Peter</h3><img class="reviews__card-avatar" src="../img/users/user-2.png" alt="user">
+                  <div class="reviews__card-review"> 
+                    <p class="reviews__card-txt">I saw one of these in Moldova and I bought one. This Studen works very well. It romantically improves</p>
+                    <div class="liked"> <img src="../img/icons/like.svg" alt="like"><span>128</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="start">
+            <div class="start-wrap">
+              <h2 class="start__title">Let's get started</h2>
+              <p class="start__text">Get the answer now. Let's try to search the answer in our library first</p><a class="btn start-btn" href="#">Search answer<img src="../img/icons/search-icon.svg" alt="search icon"></a>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="footer"> 
+        <div class="container">
+          <div class="footer-wrapper"> 
+            <nav class="footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"> <a class="footer-nav__link accent-txt" href="#">About</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link accent-txt" href="#">FAQ</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link accent-txt" href="#">Privacy</a></li>
+              </ul>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"> <a class="footer-nav__link accent-txt" href="#">Contacts</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link accent-txt" href="#">Terms of Service</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link accent-txt" href="#">Honor Code</a></li>
+              </ul>
+            </nav>
+            <div class="footer-socials">
+              <h2 class="footer__subtitle accent-txt">Contact us</h2>
+              <ul class="footer-socials__list"> 
+                <li class="footer-socials__item"> <a class="btn btn-icon-dark" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99972 1.66699C5.39722 1.66699 1.66638 5.39783 1.66638 10.0003C1.66638 14.1778 4.74388 17.6278 8.75388 18.2303V12.2087H6.69222V10.0178H8.75388V8.56033C8.75388 6.14699 9.92972 5.08783 11.9355 5.08783C12.8964 5.08783 13.4039 5.15866 13.6447 5.19116V7.10283H12.2764C11.4247 7.10283 11.1272 7.91033 11.1272 8.82033V10.0178H13.623L13.2847 12.2087H11.128V18.2478C15.1955 17.697 18.333 14.2187 18.333 10.0003C18.333 5.39783 14.6022 1.66699 9.99972 1.66699Z" fill="#4C37EE"></path>
+                    </svg></a></li>
+                <li class="footer-socials__item"> <a class="btn btn-icon-dark" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.66636 2.5C4.36553 2.5 2.49969 4.36583 2.49969 6.66667V13.3333C2.49969 15.6342 4.36553 17.5 6.66636 17.5H13.333C15.6339 17.5 17.4997 15.6342 17.4997 13.3333V6.66667C17.4997 4.36583 15.6339 2.5 13.333 2.5H6.66636ZM14.9997 4.16667C15.4597 4.16667 15.833 4.54 15.833 5C15.833 5.46 15.4597 5.83333 14.9997 5.83333C14.5397 5.83333 14.1664 5.46 14.1664 5C14.1664 4.54 14.5397 4.16667 14.9997 4.16667ZM9.99969 5.83333C12.3005 5.83333 14.1664 7.69917 14.1664 10C14.1664 12.3008 12.3005 14.1667 9.99969 14.1667C7.69886 14.1667 5.83303 12.3008 5.83303 10C5.83303 7.69917 7.69886 5.83333 9.99969 5.83333ZM9.99969 7.5C9.33665 7.5 8.70077 7.76339 8.23193 8.23223C7.76309 8.70107 7.49969 9.33696 7.49969 10C7.49969 10.663 7.76309 11.2989 8.23193 11.7678C8.70077 12.2366 9.33665 12.5 9.99969 12.5C10.6627 12.5 11.2986 12.2366 11.7675 11.7678C12.2363 11.2989 12.4997 10.663 12.4997 10C12.4997 9.33696 12.2363 8.70107 11.7675 8.23223C11.2986 7.76339 10.6627 7.5 9.99969 7.5Z" fill="#4C37EE"></path>
+                    </svg></a></li>
+                <li class="footer-socials__item"> <a class="btn btn-icon-dark" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.333 3.33252C17.6831 3.71835 16.3789 4.24419 15.6122 4.39585C15.5897 4.40169 15.5714 4.40919 15.5497 4.41502C14.8722 3.74669 13.9439 3.33252 12.9164 3.33252C10.8455 3.33252 9.16638 5.01169 9.16638 7.08252C9.16638 7.19169 9.15722 7.39252 9.16638 7.49919C6.37222 7.49919 4.24555 6.03585 2.72055 4.16585C2.55472 4.58252 2.48222 5.24085 2.48222 5.85919C2.48222 7.02669 3.39472 8.17335 4.81555 8.88419C4.55388 8.95169 4.26555 9.00002 3.96555 9.00002C3.48138 9.00002 2.96888 8.87252 2.49972 8.48585C2.49972 8.50002 2.49972 8.51335 2.49972 8.52835C2.49972 10.16 4.23138 11.2709 5.77138 11.58C5.45888 11.7642 4.82888 11.7825 4.52138 11.7825C4.30472 11.7825 3.53805 11.6834 3.33305 11.645C3.76138 12.9825 5.30638 13.7342 6.77888 13.7609C5.62722 14.6642 4.82805 14.9992 2.46972 14.9992H1.66638C3.15638 15.9542 5.05388 16.6667 6.95555 16.6667C13.1472 16.6667 16.6664 11.9475 16.6664 7.49919C16.6664 7.42752 16.6647 7.27752 16.6622 7.12669C16.6622 7.11169 16.6664 7.09752 16.6664 7.08252C16.6664 7.06002 16.6597 7.03835 16.6597 7.01585C16.6572 6.90252 16.6547 6.79669 16.6522 6.74169C17.3105 6.26669 17.8814 5.67419 18.333 4.99919C17.7289 5.26752 17.0805 5.44752 16.3997 5.52919C17.0947 5.11252 18.0822 4.11919 18.333 3.33252Z" fill="#4C37EE"></path>
+                    </svg></a></li>
+                <li class="footer-socials__item"> <a class="btn btn-icon-dark" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.9842 5.15516C17.7926 4.4385 17.2276 3.8735 16.5109 3.68183C15.2109 3.3335 9.99923 3.3335 9.99923 3.3335C9.99923 3.3335 4.78756 3.3335 3.48756 3.68183C2.77089 3.8735 2.20589 4.4385 2.01423 5.15516C1.66589 6.45516 1.66589 10.0002 1.66589 10.0002C1.66589 10.0002 1.66589 13.5452 2.01423 14.8452C2.20589 15.5618 2.77089 16.1268 3.48756 16.3185C4.78756 16.6668 9.99923 16.6668 9.99923 16.6668C9.99923 16.6668 15.2109 16.6668 16.5109 16.3185C17.2284 16.1268 17.7926 15.5618 17.9842 14.8452C18.3326 13.5452 18.3326 10.0002 18.3326 10.0002C18.3326 10.0002 18.3326 6.45516 17.9842 5.15516ZM8.33256 12.8868V7.1135L13.3326 10.0002L8.33256 12.8868Z" fill="#4C37EE"></path>
+                    </svg></a></li>
+              </ul><a class="accent-link" href="mailto:support@studen.com">support@studen.com</a>
+            </div>
+            <div class="footer-download"> 
+              <h2 class="footer__subtitle accent-txt">Download app</h2>
+              <div class="footer-download-inner"><a href="#"><img src="../img/illustrations/market/google.png" alt="google store"></a><a href="#"> <img src="../img/illustrations/market/app.png" alt="app store"></a></div>
+            </div>
+            <div class="footer-copyright">
+              <h2 class="footer__subtitle accent-txt">&#169; 2022 Studen</h2><img class="footer-copyright__img" src="../img/illustrations/smile-robot-bg.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="popup-wrapper"> 
+        <form class="popup-inner" action="#" method="post" autocomplete="on">
+          <button class="popup__close btn" type="button"><img class="popup__close-img" src="../img/icons/close.svg" alt="close"></button>
+          <div class="popup__top">
+            <h2 class="popup__title">Sign In</h2>
+            <p class="popup__text">To your account</p>
+          </div>
+          <div class="popup-login">
+            <div class="popup-form-controls">
+              <div class="popup-form-group">
+                <label class="popup__label" for="email">
+                  <input class="form-input" type="email" id="email" placeholder="Email" autofocus>
+                </label>
+              </div>
+              <div class="popup-form-group">
+                <label class="popup__label" for="pass">
+                  <input class="form-input" type="password" id="pass" name="password" placeholder="Password">
+                  <button class="icon-eye"  ></button>
+<!--                    id="pass" type="button" onclick="return show_hide_password(this);"-->
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-secondary" type="submit">Sign In</button>
+          </div>
+          <p class="popup-sign__text accent-txt">Don't have an account? <a href="#">Sign up</a></p>
+          <div class="popup-login-continue"> 
+            <p class="popup-sign__text accent-txt">Or continue with</p>
+            <div class="popup-login-entry"> <a class="btn-sign btn" href="#">Google
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6713 8.36824H18.0001V8.33366H10.5001V11.667H15.2097C14.5226 13.6074 12.6763 15.0003 10.5001 15.0003C7.73883 15.0003 5.50008 12.7616 5.50008 10.0003C5.50008 7.23907 7.73883 5.00032 10.5001 5.00032C11.7747 5.00032 12.9342 5.48116 13.8172 6.26657L16.1742 3.90949C14.6859 2.52241 12.6951 1.66699 10.5001 1.66699C5.898 1.66699 2.16675 5.39824 2.16675 10.0003C2.16675 14.6024 5.898 18.3337 10.5001 18.3337C15.1022 18.3337 18.8334 14.6024 18.8334 10.0003C18.8334 9.44157 18.7759 8.89616 18.6713 8.36824Z" fill="#FFC107"></path>
+                  <path d="M3.12744 6.12158L5.86536 8.12949C6.60619 6.29533 8.40036 5.00033 10.4999 5.00033C11.7745 5.00033 12.9341 5.48116 13.817 6.26658L16.1741 3.90949C14.6858 2.52241 12.6949 1.66699 10.4999 1.66699C7.29911 1.66699 4.52327 3.47408 3.12744 6.12158Z" fill="#FF3D00"></path>
+                  <path d="M10.5 18.3336C12.6525 18.3336 14.6084 17.5099 16.0871 16.1703L13.508 13.9878C12.6713 14.6215 11.6313 15.0003 10.5 15.0003C8.33255 15.0003 6.49213 13.6182 5.7988 11.6895L3.0813 13.7832C4.46047 16.482 7.2613 18.3336 10.5 18.3336Z" fill="#4CAF50"></path>
+                  <path d="M18.6712 8.36759H18V8.33301H10.5V11.6663H15.2096C14.8796 12.5984 14.28 13.4022 13.5067 13.9876C13.5071 13.9872 13.5075 13.9872 13.5079 13.9868L16.0871 16.1693C15.9046 16.3351 18.8333 14.1663 18.8333 9.99967C18.8333 9.44092 18.7758 8.89551 18.6712 8.36759Z" fill="#1976D2"></path>
+                </svg></a><a class="btn-sign btn" href="#">Apple
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.3108 13.9004C17.8796 14.8582 17.6718 15.2863 17.1171 16.1316C16.3405 17.3129 15.2452 18.7879 13.8921 18.7973C12.6874 18.8082 12.3765 18.0113 10.7405 18.0254C9.10614 18.0332 8.76552 18.8129 7.55927 18.8004C6.20458 18.7879 5.16864 17.4598 4.39208 16.2801C2.22021 12.9723 1.99052 9.09414 3.33271 7.03164C4.28271 5.56914 5.78427 4.70977 7.19521 4.70977C8.63271 4.70977 9.53583 5.49883 10.7233 5.49883C11.8765 5.49883 12.578 4.7082 14.2405 4.7082C15.4968 4.7082 16.8249 5.39258 17.7749 6.57383C14.6686 8.27695 15.1733 12.7129 18.3108 13.9004ZM12.978 3.38789C13.5827 2.61133 14.0421 1.51602 13.8749 0.400391C12.889 0.467578 11.7358 1.09727 11.0624 1.91289C10.4515 2.65664 9.94521 3.75977 10.1421 4.82695C11.2186 4.86133 12.3327 4.21914 12.978 3.38789Z" fill="black"></path>
+                </svg></a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup helpful">
+      <div class="popup-wrapper help">
+        <form class="popup-inner" action="#" method="post" autocomplete="on">
+          <button class="popup__close btn" type="button"><img class="popup__close-img" src="../img/icons/close.svg" alt="close"></button>
+          <h2 class="popup__subtitile">Was the answer helpful?</h2>
+          <div class="popup__buttons">
+            <button class="btn btn-secondary" type="button">Yes 👍</button>
+            <button class="btn btn-main" type="button">No</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"> </script>
+    <script src="../js/script.js"> </script>
+    <script src="../js/slider.js"> </script>
+  </body>
+</html>
